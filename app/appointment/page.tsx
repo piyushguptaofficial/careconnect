@@ -1,0 +1,1 @@
+import AppointmentClient from './appointment-client'; export default async function Appointment({searchParams}:{searchParams:Promise<{doctor?:string}>}){const p=await searchParams; return <AppointmentClient preferred={p.doctor||''}/>}
